@@ -1,0 +1,12 @@
+[Unit]
+Description=brewme temperature reporting daemon
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/brewme/brewme.py
+Restart=always
+User=pi
+Group=pi
+
+[Install]
+WantedBy = multi-user.target
